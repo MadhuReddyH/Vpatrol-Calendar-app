@@ -1,0 +1,110 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+.right-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  margin: auto 20px;
+}
+.left-part {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+.left-part h1 {
+  margin-left: 10px;
+}
+.calendar-select {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+  outline: 1px solid black;
+  border-radius: 5px;
+  padding: 8px 5px;
+  margin: auto 10px;
+}
+.calendar-select p {
+  margin: 0;
+}
+.current-range {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 10px;
+  font-weight: bold;
+}
+.current-range p {
+  display: flex;
+  font-size: 20px;
+  margin: auto 3px;
+}
+.calendar-select select {
+  border: none;
+  font-size: 16px;
+  background-color: transparent;
+  outline: none;
+  margin: 0;
+}
+.navigation-button {
+  display: flex;
+  margin: auto 10px;
+}
+.navigation-button button,
+.left-part button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.right-part button,
+.left-part button {
+  padding: 6px 20px;
+  margin: 2px;
+}
+.left-part button {
+  height: 30px;
+}
+.left-part button:hover {
+  text-decoration: underline;
+}
+.right-part button p,
+.left-part button p {
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 1050px) {
+  .left-part h1 {
+    margin-left: 0px;
+  }
+  .navigation {
+    padding: 0px 5px;
+  }
+  .current-range p {
+    display: flex;
+    font-size: 16px;
+    margin: auto 0px;
+  }
+  .current-range {
+    margin: auto 0px;
+  }
+  .calendar-select {
+    gap: 5px;
+    margin: auto 5px;
+  }
+  .navigation-button {
+    margin: auto 0px;
+  }
+  .right-part {
+    margin: auto 5px;
+  }
+}
